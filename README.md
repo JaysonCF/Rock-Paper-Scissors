@@ -1,1 +1,1 @@
-# Rock-Paper-Scissors
+# JavaScript program built from scratch "Rock-Paper-Scissors"
