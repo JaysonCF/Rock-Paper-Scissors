@@ -7,15 +7,28 @@
 // call the round function inside of game(),
 // 5 round game that keeps score and reports a winner or loser at the end.
  
-const choices = ['rock', 'paper', 'scissors'];
+const options = ['Rock', 'Paper', 'Scissors']
 
 function getComputerChoice(){
-    getComputerChoice = choices;
-    return choices[Math.floor(Math.random()* choices.length)]
+    const choice = options[Math.floor(Math.random()*options.length)];
+    return choice;
 }
 console.log(getComputerChoice())
 
-function gameRound(playerSelection, computerSelection){
+function playRound(playerSelection, computerSelection){
+    if (playerSelection == computerSelection){
+        return 'Tie'
+    }
+    else if (
+        (playerSelection == 'Rock' && computerSelection == 'Scissors')
+        (playerSelection == 'Paper' && computerSelection == 'Rock')
+        (playerSelection == 'Scissors' && computerSelection == 'Paper')
+    ){
+    return 'Player';
+    }  
+    
+    else {
+        return 'Computer'
+    }
     
 }
-console.log(gameRound())
