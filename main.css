@@ -1,0 +1,246 @@
+body{
+    background-image: url("/images/rpsback.png");
+    margin: 0vh;
+    padding: 0vw;
+    height: 100%;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.header{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+#selectionsbox{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 50vh;
+}
+.playerbox{
+    background-color: grey;
+    width: 40vw;
+    border-radius: 10px;
+}
+.computerbox{
+    background-color: grey;
+    width: 40vw;
+    border-radius: 10px;
+}
+.player{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+        display: flex;
+        justify-content: center;
+}
+.computer{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+        display: flex;
+        justify-content: center;
+}
+.playerscore{
+    display: flex;
+    justify-content: center;
+}
+.computerscore{
+    display: flex;
+    justify-content: center;
+}
+#pScore{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+#cScore{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.gameselection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        color: white;
+        gap: 10px;
+        padding-right: 3vw;
+        padding-left: 3vw;
+}
+.crText{
+    display: flex;
+    justify-content: center;
+}
+.cpText{
+    display: flex;
+    justify-content: center;
+}
+.csText{
+    display: flex;
+    justify-content: center;
+}
+#crImg{
+    width: 10vw;
+    height: 20vh;
+}
+#cpImg{
+    width: 10vw;
+    height: 20vh;
+}
+#csImg{
+    width: 10vw;
+    height: 20vh;
+}
+.cRock{
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-top: 1px black solid;
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px black;
+}
+.cRock:hover{
+    transform: translate(1%, 2%);
+    cursor: pointer;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 0 0;
+}
+.cPaper{
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-top: 1px black solid;
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px black;
+}
+.cPaper:hover{
+    transform: translate(1%, 2%);
+    cursor: pointer;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 0 0;
+}
+.cScissors{
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-top: 1px black solid;
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px black;
+}
+.cScissors:hover{
+    transform: translate(1%, 2%);
+    cursor: pointer;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 0 0;
+}
+.prText{
+    display: flex;
+    justify-content: center;
+}
+.ppText{
+    display: flex;
+    justify-content: center;
+}
+.psText{
+    display: flex;
+    justify-content: center;
+}
+#prImg{
+    width: 10vw;
+    height: 20vh;
+}
+#ppImg{
+    width: 10vw;
+    height: 20vh;
+}
+#psImg{
+    width: 10vw;
+    height: 20vh;
+}
+.pRock{
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-top: 1px black solid;
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px black;
+}
+.pRock:hover{
+    transform: translate(1%, 2%);
+    cursor: pointer;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 0 0;
+}
+.pPaper{
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-top: 1px black solid;
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px black;
+}
+.pPaper:hover{
+    transform: translate(1%, 2%);
+    cursor: pointer;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 0 0;
+}
+.pScissors{
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-top: 1px black solid;
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px black;
+}
+.pScissors:hover{
+    transform: translate(1%, 2%);
+    cursor: pointer;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 0 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footertxt{
+    display: flex; 
+    justify-content: center;
+    margin-top: 10vh;
+        font-size: 20px;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+}
+
+#reset{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    height: 4vh;
+}
+.resetbtn{
+    display: flex;
+    justify-content: center;
+        border-radius: 4px;
+        background-color: grey;
+        color: white;
+        border: 1px solid;
+        width: 10vw;
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding-top: 3px;
+}
+.resetbtn:hover{
+    border: none;
+}

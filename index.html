@@ -2,15 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <script src="javascript.js" defer></script>
     <title>Rock Paper Scissors</title>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
+    <div id="title">
+        <h1 class="header">Rock Paper Scissors</h1>
+    </div>
 
+    <div id="selectionsbox">
+        <div class="playerbox">
+            <h3 class="player">Player</h3>
+            <div class="playerscore">
+                <p id="pScore">Score: 0</p>
+            </div>
+            <div class="gameselection">
+                <div class="pRock">
+                    <p class="prText">Rock</p>
+                    <img src="/images/rock.png" alt="rock" class="selections" id="prImg">
+                </div>
 
+                <div class="pPaper">
+                    <p class="ppText">Paper</p>
+                    <img src="/images/paper.png" alt="paper" class="selections" id="ppImg">
+                </div>
 
+                <div class="pScissors">
+                    <p class="psText">Scissors</p>
+                    <img src="/images/scissors.png" alt="scissors" class="selections" id="psImg">
+                </div>
+            </div>
+        </div>
 
+        <div class="computerbox">
+            <h3 class="computer">Computer</h3>
+            <div class="computerscore">
+                <p id="cScore">Score: 0</p>
+            </div>
+            <div class="gameselection">
+                <div class="cRock">
+                    <p class="crText">Rock</p>
+                    <img src="/images/rock.png" alt="rock" class="selections" id="crImg">
+                </div>
 
+                <div class="cPaper">
+                    <p class="cpText">Paper</p>
+                    <img src="/images/paper.png" alt="paper" class="selections" id="cpImg">
+                </div>
+
+                <div class="cScissors">
+                    <p class="csText">Scissors</p>
+                    <img src="/images/scissors.png" alt="scissors" class="selections" id="csImg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reset">
+        <button class="resetbtn">RESET</button>
+    </div>
+
+    <div id="footer">
+        <h6 class="footertxt">JaysonCF - RPS</h6>
+    </div>
 </body>
 </html>
