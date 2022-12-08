@@ -6,67 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Rock Paper Scissors</title>
-    <script src="javascript.js" defer></script>
+    <script src=javascript.js defer></script>
 </head>
 <body>
-    <div id="title">
-        <h1 class="header">Rock Paper Scissors</h1>
-    </div>
-
-    <div id="selectionsbox">
-        <div class="playerbox">
-            <h3 class="player">Player</h3>
-            <div class="playerscore">
-                <p id="pScore">Score: 0</p>
-            </div>
-            <div class="gameselection">
-                <div class="pRock">
-                    <p class="prText">Rock</p>
-                    <img src="/images/rock.png" alt="rock" class="selections" id="prImg">
-                </div>
-
-                <div class="pPaper">
-                    <p class="ppText">Paper</p>
-                    <img src="/images/paper.png" alt="paper" class="selections" id="ppImg">
-                </div>
-
-                <div class="pScissors">
-                    <p class="psText">Scissors</p>
-                    <img src="/images/scissors.png" alt="scissors" class="selections" id="psImg">
-                </div>
-            </div>
+    <div class="container">
+        <header class="header">
+          <h1>Rock Paper Scissors</h1>
+          <button id="restart" class="restart-btn">Restart Game</button>
+          <div id="score" class="score">
+            <p>Player: 0</p>
+            <p>Computer: 0</p>
+          </div>
+        </header>
+        <h2>Choose</h2>
+        <div class="choices">
+          <img src="images/rock.png" id="rock" class="choice">
+          <img src="images/paper.png" id="paper" class="choice">
+          <img src="images/scissors.png" id="scissors" class="choice">
         </div>
+      </div>
+  
+      <div class="modal">
+        <div id="result" class="modal-content"></div>
+      </div>
 
-        <div class="computerbox">
-            <h3 class="computer">Computer</h3>
-            <div class="computerscore">
-                <p id="cScore">Score: 0</p>
-            </div>
-            <div class="gameselection">
-                <div class="cRock">
-                    <p class="crText">Rock</p>
-                    <img src="/images/rock.png" alt="rock" class="selections" id="crImg">
-                </div>
-
-                <div class="cPaper">
-                    <p class="cpText">Paper</p>
-                    <img src="/images/paper.png" alt="paper" class="selections" id="cpImg">
-                </div>
-
-                <div class="cScissors">
-                    <p class="csText">Scissors</p>
-                    <img src="/images/scissors.png" alt="scissors" class="selections" id="csImg">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="reset">
-        <button class="resetbtn">RESET</button>
-    </div>
-
-    <div id="footer">
-        <h6 class="footertxt">JaysonCF - RPS</h6>
-    </div>
+      <footer>
+        <h3>JaysonCF - RPS</h3>
+      </footer>
 </body>
 </html>
