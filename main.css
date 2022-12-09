@@ -98,6 +98,15 @@ header {
   
 }
 
+.rock:active {
+  cursor: none;
+}
+.paper:active {
+  cursor: none;
+}
+.scissors:active {
+  cursor: none;
+}
 
 footer {
   display: flex;
