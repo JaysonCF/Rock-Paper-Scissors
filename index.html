@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Rock Paper Scissors</title>
-    <script src=javascript.js defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Rock Paper Scissors</title>
+  <script src="javascript.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-          <h1>Rock Paper Scissors</h1>
-          <button id="restart" class="restart-btn">Restart Game</button>
-          <div id="score" class="score">
-            <p>Player: 0</p>
-            <p>Computer: 0</p>
-          </div>
-        </header>
-        <h2>Choose</h2>
-        <div class="choices">
-          <img src="images/rock.png" id="rock" class="choice">
-          <img src="images/paper.png" id="paper" class="choice">
-          <img src="images/scissors.png" id="scissors" class="choice">
-        </div>
-      </div>
-  
-      <div class="modal">
-        <div id="result" class="modal-content"></div>
-      </div>
+  <header>
+    <h1 class="headerinfo">Rock Paper Scissors</h1>
+    <button id="resetbtn" class="resetbtn">Restart</button>
+  </header>
 
-      <footer>
-        <h3>JaysonCF - RPS</h3>
-      </footer>
+  <div class="scorebox">
+    <div id="pScorebox">
+      <p id="pScore">Player Score: 0</p>
+    </div>
+
+    <div id="gScorebox">
+      <p id="gScore">Result: Game In Progress</p>
+    </div>
+
+    <div id="cScorebox">
+      <p id="cScore">Computer Score: 0</p>
+    </div>
+  </div>
+  
+  <div id="selections">
+    <div class="selectionsinfobox">
+    <p class="selectioninfo">Choose One!</p>
+    </div>
+
+    <div id="options" class="options">
+      <img src="/images/rock.png" alt="rock" id="rock" class="rock">
+      <img src="/images/paper.png" alt="paper" id="paper" class="paper">
+      <img src="/images/scissors.png" alt="scissors" id="scissors" class="scissors">
+    </div>
+  </div>
+
+  <footer>
+    <h5>JaysonCF - RPS</h5>
+  </footer>
+
 </body>
 </html>
