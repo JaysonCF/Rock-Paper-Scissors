@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <title>Rock Paper Scissors</title>
-  <script src="javascript.js"></script>
+  <script src="javascript.js" defer></script>
 </head>
 <body>
   <header>
@@ -16,15 +16,15 @@
 
   <div class="scorebox">
     <div id="pScorebox">
-      <p id="pScore">Player Score: 0</p>
+      <p id="pScore">Player Score: <span class="actualPScore">0</span></p>
     </div>
 
     <div id="gScorebox">
-      <p id="gScore">Result: Game In Progress</p>
+      <p id="gScore">Result: <span class="actualGScore">Game In Progress</span></p>
     </div>
 
     <div id="cScorebox">
-      <p id="cScore">Computer Score: 0</p>
+      <p id="cScore">Computer Score: <span class="actualCScore">0</span></p>
     </div>
   </div>
   
@@ -34,9 +34,9 @@
     </div>
 
     <div id="options" class="options">
-      <img src="/images/rock.png" alt="rock" id="choice" class="rock">
-      <img src="/images/paper.png" alt="paper" id="choice" class="paper">
-      <img src="/images/scissors.png" alt="scissors" id="choice" class="scissors">
+      <img src="/images/rock.png" alt="rock" id="choiceR" class="rock">
+      <img src="/images/paper.png" alt="paper" id="choiceP" class="paper">
+      <img src="/images/scissors.png" alt="scissors" id="choiceS" class="scissors">
     </div>
   </div>
 
